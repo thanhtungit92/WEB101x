@@ -1,0 +1,599 @@
+@media (min-width: 481px) and (max-width: 1024px) {
+    * {
+        margin: 0px;
+    }
+    
+    .bg-grey {
+        background: #f7f7f7;
+    }
+    
+    section > .container{
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding: 30px 50px;
+    }
+    
+    #nav-bar {
+        text-align: center;
+    }
+    
+    .banner-container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    
+    .centered {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /* chỉnh padding về 0 */
+    .empty-padding {
+        padding:0px !important;
+    }
+    
+    /* chỉnh border */
+    .topnav {
+        border: solid 1px;
+        border-color: gainsboro;
+        overflow: hidden;
+    }
+    
+    /* chia navbar theo grid */
+    .nav-bar-container {
+        display: grid !important;
+        grid-template-columns: 10% 18% 18% 8% 18% 18% 10%;
+    }
+    
+    /* chỉnh các components trong navbar */
+    .nav-bar-container-column {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border-left: solid 1px;
+        border-color: gainsboro;
+    }
+    
+    /* css hình ảnh ở nav-bả */
+    .nav-bar-img {
+        display: none;
+    }
+    
+    /* padding cho nội dung trong nav-bar */
+    .nav-bar-container-column-content {
+        padding: 1rem;
+    }
+    
+    /* Change the color of links on hover */
+    /* .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    } */
+    
+    /* màu của icon */
+    .icon-color {
+        color: #5aa7dd;
+    }
+    
+    /* align của thông tin và mục tiêu */
+    .section-align {
+        text-align: left !important;
+        padding-top: 4.5rem !important;
+    }
+    
+    /* grid của thông tin và mục tiêu */
+    .row {
+        display: grid !important;
+        grid-template-columns: 50% 50%;
+    }
+    
+    /* column của thông tin và mục tiêu */
+    .column {
+        padding: 16px;
+        height: 400px;
+        width: 100%;
+    }
+    
+    /* grid của các sections kinh nghiệm, skill, ... */
+    .row-info {
+        margin-left: -1rem;
+        display: grid !important;
+        grid-template-columns: 50% 50%;
+        gap:1rem;
+    }
+    
+    /* chiều cao của mục kinh nghiệm */
+    .column-info-exp {
+        height: 650px;
+    }
+
+    /* chiều cao của mục kinh nghiệm */
+    .column-info-study {
+        height: 650px;
+    }
+
+    /* chiều cao của mục hoạt động */
+    .column-info-operation {
+        height: 400px;
+    }
+    
+    /* box kinh nghiệm */
+    .s1-1-container {
+        display: grid;
+        border: solid 1px;
+        border-color: gainsboro;
+        grid-template-areas: 
+            'title-item title-item title-item icon-item'
+            'content-item content-item content-item content-item';
+        grid-template-rows: 0.5fr 1.5fr;
+    }
+    
+    /* box học vấn */
+    .s1-2-container {
+        display: grid;
+        border: solid 1px;
+        border-color: gainsboro;
+        grid-template-areas: 
+            'title-item title-item title-item icon-item'
+            'content-item content-item content-item content-item';
+        grid-template-rows: 0.5fr 1.5fr;
+    }
+    
+    /* box hoạt động */
+    .s1-3-container {
+        display: grid;
+        border: solid 1px;
+        border-color: gainsboro;
+        grid-template-areas: 
+            'title-item title-item title-item icon-item'
+            'content-item content-item content-item content-item';
+        grid-template-rows: 0.5fr 1.5fr;
+    }
+    
+    /* title các mục kinh nghiệm, học vấn... */
+    .s1-title {
+        grid-area: title-item;
+        padding-left: 1.3rem;
+        padding-top: 30px;
+        height: 20px !important;
+    }
+    
+    /* icon các mục kinh nghiệm, học vấn... */
+    .s1-icon {
+        grid-area: icon-item;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    /* css phần content*/
+    .s1-1-content {
+        grid-area: content-item;
+        padding-left: 1.3rem;
+    }
+    
+    
+    /* height của mục sở thích, ngôn ngữ... */
+    .column-info-s2 {
+        height: 400px;
+    }
+    
+    /*css cho target content*/
+    .target-content {
+        margin-right: 20px;
+    }
+    
+    /* bỏ style của ul */
+    .ul-non-style {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    /*style ul */
+    .ul-people-info {
+        padding-left: 1.3rem;;
+    }
+    
+    /*style li */
+    .ul-people-info li::before {
+        color: blue;
+    }
+    
+    /*margin cho titile*/
+    .section-title {
+        margin-bottom: 30px;
+    }
+    
+    /*thông tin chi tiết*/
+    .info-detail {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* css phần nội dung */
+    .content-data {
+        margin-bottom: 14px;
+        padding-bottom: 6px;
+        padding-right: 4px;
+    }
+    
+    /* small text */
+    .small {
+        font-size: 12px;
+        font-style: italic;
+        color: rgb(100, 98, 98);
+    }
+    
+    /* css của content phần grid */
+    .s2-1-container {
+        display: grid;
+        border: solid 1px;
+        border-color: gainsboro;
+        grid-template-areas: 
+            'title-item title-item title-item icon-item'
+            'content-item content-item content-item content-item';
+        grid-template-rows: 0.5fr 1.5fr;
+    }
+    
+    /* css của content phần grid */
+    .s2-2-container {
+        display: grid;
+        border: solid 1px;
+        border-color: gainsboro;
+        grid-template-areas: 
+            'title-item title-item title-item icon-item'
+            'content-item content-item content-item content-item';
+        grid-template-rows: 0.5fr 1.5fr;
+    }
+    
+    /* css của content phần grid */
+    .s2-3-container {
+        display: grid;
+        border: solid 1px;
+        border-color: gainsboro;
+        grid-template-areas: 
+            'title-item title-item title-item icon-item'
+            'content-item content-item content-item content-item';
+        grid-template-rows: 0.5fr 1.5fr;
+    }
+    
+    /* css của content phần grid */
+    .s2-1-content-container {
+        display: grid;
+        grid-template-areas:
+            'icon-1 icon-2 icon-3 icon-4'
+            'hobby hobby hobby hobby';
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    /* area của grid */
+    .s2-1-grid-icon-1 {
+        grid-area: icon-1;
+    }
+    
+    /* area của grid */
+    .s2-1-grid-icon-2 {
+        grid-area: icon-2;
+    }
+    
+    /* area của grid */
+    .s2-1-grid-icon-3 {
+        grid-area: icon-3;
+    }
+    
+    /* area của grid */
+    .s2-1-grid-icon-4 {
+        grid-area: icon-4;
+    }
+    
+    /* border tròn của icon mục sở thích */
+    .icon-cirle {
+        padding: 0.25rem;
+        border: 1px solid;
+        border-radius: 50%;
+        color: blueviolet;
+    }
+    
+    /* css của ngôn ngữ */
+    .language-container {
+        padding-left: 1.3rem;
+    }
+    
+    /* css của kỹ năng */
+    .skill-container {
+        padding-left: 1.3rem;
+    }
+    
+    /*container của mục chứng chỉ*/
+    .certificate-container {
+        display: grid !important;
+        grid-template-columns: 50% 50%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    /*css cho phần nội dung chứng chỉ*/
+    .certificate-contents {
+        display: grid !important;
+        grid-template-columns: 40% 60%;
+    }
+    
+    /*css cho phần chi tiết chứng chỉ*/
+    .certificate-detail {
+        padding-left: 1.3rem;
+        padding-right: 0.5rem;
+    }
+    
+    /*border cho phần chi tiết chứng chỉ*/
+    .certificate-detail-border {
+        border-left: 0.2px solid;
+        border-color: #d6c08d;
+    }
+    
+    /*border cho phần chứng chỉ*/
+    .certificate-border {
+        margin-left: 1.3rem;
+        border-bottom: 0.2px solid;
+        border-color: #d6c08d;
+    }
+    
+    /*grid chia layout của các dự án */
+    .project-container {
+        display: grid !important;
+        grid-template-columns: 32% 32% 32%;
+        gap: 3rem;
+    }
+    
+    /* css title dự án */
+    .project-title {
+        height: 50px;
+        border: 1px solid;
+        border-color: gainsboro;
+        padding-left: 1rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* css của project-dev-info mục dự án */
+    .project-dev-info {
+        height: 60px;
+        border: 1px solid;
+        border-top: none;
+        border-color: gainsboro;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        padding-left: 1rem !important;
+    }
+    
+    /* css năm của mục project-dev-info */
+    .year-item {
+        background: #9e9ee9;
+        border-radius: 20%;
+        color: white;
+    }
+    
+    /* css của item thứ 2 trở đi trong mục  project-dev-info*/
+    .next-item {
+        padding-left: 2rem;
+    }
+
+    /* css của item cuối cùng trong mục  project-dev-info*/
+    .last-item {
+        padding-left: 4.4rem;
+    }
+    
+    /* css của table */
+    .project-table {
+        border-top: none;
+        border: 1px solid;
+        border-color: gainsboro;
+        border-collapse: collapse;
+        height: 240px;
+    }
+    
+    /* css cho các td trong table */
+    .project-table tr td {
+        border-bottom: 1px solid;
+        border-color: gainsboro;
+    }
+    
+    
+    /* css cho item td đầu tiên */
+    .project-table tr td:nth-child(1){
+        width: 25%;
+        padding: 0.5rem;
+        padding-top: 0;
+    }
+    
+    /* hiển thị chung hàng */
+    .inline-display {
+        display: inline-block;
+    }
+    
+    /* decorate icon footer */
+    .footer-a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    /* padding phần footer */
+    .footer-padding {
+        padding-left: 3rem;
+    }
+
+    .footer-content {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    
+    /* css năm của mục project-dev-info */
+    .btn-submit {
+        background: #6767fc;
+        border-radius: 6%;
+        color: white;
+        padding: 8px;
+        width: 90px;
+    }
+
+    /* để ẩn 1 component */
+    .hide {
+        display:none;
+    }
+
+    /*css content of view button */
+    .view-content {
+        padding-top: 50px;
+        padding-left: 1.3rem;
+        cursor: pointer;
+    }
+
+    /* css content of view less button */
+    .view-less-content {
+        padding-left: 1.3rem;
+        cursor: pointer;
+        margin-left: -20px;
+    }
+
+    /* css view more and less button */
+    .view-button {
+        background-color: rgb(255, 212, 159);
+        font-size: 16px;
+        border-radius: 25px;
+        padding: 2px;
+        padding: 4px;
+    }
+
+    /* ẩn view more */
+    #exp-view-more {
+        display: none;
+    }
+
+    /* hiển thị nút viewmore khí trỏ vào box */
+    #exp-less:hover #exp-view-more{
+        display: block;
+    }
+
+    /* ẩn view more */
+    #study-view-more {
+        display: none;
+    }
+
+    /* hiển thị nút viewmore khí trỏ vào box */
+    #study-less:hover #study-view-more{
+        display: block;
+    }
+
+    /* ẩn view more */
+    #operation-view-more {
+        display: none;
+    }
+
+    /* hiển thị nút viewmore khí trỏ vào box */
+    #operation-less:hover #operation-view-more{
+        display: block;
+    }
+
+    /* ẩn view more */
+    #skill-view-more {
+        display: none;
+    }
+
+    /* hiển thị nút viewmore khí trỏ vào box */
+    #skill-less:hover #skill-view-more{
+        display: block;
+    }
+
+    /* ẩn view more */
+    #language-view-more {
+        display: none;
+    }
+
+    /* hiển thị nút viewmore khí trỏ vào box */
+    #language-less:hover #language-view-more{
+        display: block;
+    }
+
+    /* ẩn view more */
+    #hobby-view-more {
+        display: none;
+    }
+
+    /* hiển thị nút viewmore khí trỏ vào box */
+    #hobby-less:hover #hobby-view-more {
+        display: block;
+    }
+
+    /* ẩn view less */
+    #exp-view-less {
+        display: none;
+    }
+
+    /* hiển thị nút viewless khí trỏ vào box */
+    #exp-full:hover .s1-1-content #exp-view-less {
+        display: block;
+    }
+
+    /* ẩn view less */
+    #hobby-view-less {
+        display: none;
+    }
+
+    /* hiển thị nút viewless khí trỏ vào box */
+    #hobby-full:hover .s1-1-content #hobby-view-less {
+        display: block;
+    }
+
+    /* css view less của hobby */
+    .hobby-view-less {
+        grid-area: hobby;
+        text-align: left;
+        margin-left: -20px;
+    }
+
+    /* ẩn view less */
+    #study-view-less {
+        display: none;
+    }
+
+    /* hiển thị nút viewless khí trỏ vào box */
+    #study-full:hover .s1-1-content #study-view-less {
+        display: block;
+    }
+
+    /* ẩn view less */
+    #operation-view-less {
+        display: none;
+    }
+
+    /* hiển thị nút viewless khí trỏ vào box */
+    #operation-full:hover .s1-1-content #operation-view-less {
+        display: block;
+    }
+
+    /* ẩn view less */
+    #language-view-less {
+        display: none;
+    }
+
+    /* hiển thị nút viewless khí trỏ vào box */
+    #language-full:hover .language-container #language-view-less {
+        display: block;
+    }
+
+    /* ẩn view less */
+    #skill-view-less {
+        display: none;
+    }
+
+    /* hiển thị nút viewless khí trỏ vào box */
+    #skill-full:hover .skill-container #skill-view-less {
+        display: block;
+    }
+}

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/laptop.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+	<link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="./css/tablet.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Assignment 03</title>
+</head>
+<body>
+	<div id="banner" class="banner-container">
+		<img src="images/banner.jpg" alt="banner-img" width="100%" height="400"/>
+		<div class="centered">
+			<h1>Phan Thanh Tùng</h1>
+			<span>Full Stack Developer</span>
+		</div>
+	</div>
+
+	<section id="nav-bar">
+		<div class="topnav">
+			<div class="nav-bar-container">
+				<div></div>
+				<a href="#" class="nav-bar-container-column">
+					<div class="nav-bar-container-column-content">
+						<i class="icon-user icon-color"></i>Thông tin
+					</div>
+				</a>
+				
+				<a href="#" class="nav-bar-container-column">
+					<div class="nav-bar-container-column-content">
+						<i class="icon-doc-text-inv icon-color"></i>Lý lịch
+					</div>
+				</a>
+				<div class="nav-bar-container-column">
+					<img class="nav-bar-img" src="images/tung_img.png" alt="profile-img" />
+				</div>
+				<a href="#" class="nav-bar-container-column">
+					<div class="nav-bar-container-column-content">
+						<i class="icon-mail-alt icon-color"></i>Chứng chỉ
+					</div>
+				</a>
+				<a href="#" class="nav-bar-container-column">
+					<div class="nav-bar-container-column-content" style="border-right: solid 1px;
+					border-color: gainsboro;">
+						<i class="icon-star-1 icon-color"></i>Dự Án
+					</div>
+				</a>
+				<div></div>
+			</div>
+		</div>
+	<section id="about" class="bg-grey">
+		<div class="container empty-padding row">
+			<div id="target" class="column section-align" style="background: #CCCCCC;">
+				<div class="target-content">
+					<h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+					<p>
+						Trở thành một Senior Fullstack Developer sau khi tốt nghiệp chương trình tại FUnix.
+						Có thể vận dụng kiến thức học được ở Funix để apply vào các công việc hiện tại.
+					</p>
+				</div>
+			</div>
+			<div id="personal-info" class="column section-align" style="background: #d3d3d3;">
+				<h1 class="section-title">Thông tin cá nhân</h1>
+				<div id="email-required" style="display:none;">
+					<ul class="mt-40 info ul-non-style">
+						<li class="info-detail"><span style="font-weight: bold;">Giới tính</span> : Nam</li>
+						<li class="info-detail"><span style="font-weight: bold;">Ngày sinh</span> : 09/11/1992</li>
+						<li class="info-detail"><span style="font-weight: bold;">Điện thoại</span> : (+84)905091426</li>
+						<li class="info-detail"><span style="font-weight: bold;">Email</span> : tungptFX27251@funix.edu.vn</li>
+						<li class="info-detail"><span style="font-weight: bold;">Địa chỉ</span> : Đà Nẵng, Việt Nam</li>
+						<li class="info-detail"><span style="font-weight: bold;">Website</span> : https://www.linkedin.com/in/tung-phan-thanh-694862122/</li>
+						<li class="info-detail">
+							<a href="#"><i class="icon-twitter icon-color"></i></a>
+							<a href="https://www.linkedin.com/in/tung-phan-thanh-694862122/"><i class="icon-facebook icon-color"></i></a>
+							<a href="#"><i class="icon-gplus icon-color"></i></a>
+							<a href="https://www.linkedin.com/in/tung-phan-thanh-694862122/"><i class="icon-linkedin icon-color"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div id="input-email">
+					<input type="text" id="email" name="email" style="width: 100%;" placeholder="Enter email">
+					<label for="email" id="lb_email">Hãy nhập email để xác thực</label>
+					<br>
+					<br>
+					<button type="button" id="submit-btn" onclick="submit()" class="btn-submit">Submit</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</section>
+
+	
+	<section id="job-info">
+		<div class="container custom-container">
+			<div class="row-info">
+				<div style="margin-top: 1rem" id="exp-less" class="column-info-exp-less s1-1-container">
+					<h1 class="s1-title">Kinh nghiệm</h1>
+					<h1 class="s1-icon"><i class="ic-toolbox"></i></h1>
+					<div id="exp-view-more" class="view-content" onclick="viewExp()">
+						<span class="view-button"><i class="fa fa-caret-down"></i> VIEW MORE</span>
+					</div>
+				</div>
+
+				<div style="margin-top: 1rem" id="exp-full" class="column-info-exp s1-1-container hide">
+					<h1 class="s1-title">Kinh nghiệm</h1>
+					<h1 class="s1-icon"><i class="ic-toolbox"></i></h1>
+					<div class="s1-1-content">
+						<ul class="ul-people-info">
+							<li>
+								<div class="content-data">
+									<div ><b>Software Engineer - FPT Software</b></div>
+									<div class="small">06/2022 - <span>Hiện tại</span></div>
+									<div>
+										- Nhận và phân tích yêu cầu khách hàng<br>
+										- Thiết kế cơ sở dữ liệu, thiết kế hệ thống<br>
+										- Break down tasks và assign cho member<br>
+										- Review code<br>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="content-data">
+									<div><b>Software Engineer - Axon Active Đà Nẵng</b></div>
+									<div class="small">05/2019 - 06/2022</div>
+									<div>
+										- Nhận và phân tích yêu cầu khách hàng<br>
+										- Review code<br>
+										- Cung cấp giải pháp technical cho khách hàng
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div id="exp-view-less" class="view-less-content" onclick="closeExp()">
+							<span class="view-button"><i class="fa fa-caret-up"></i> VIEW LESS</span>
+						</div>
+					</div>
+					
+				</div>
+
+				<div style="margin-top: 1rem" id="study-less" class="column-info-study-less s1-2-container">
+					<h1 class="s1-title">Học vấn</h1>
+					<h1 class="s1-icon"><i class="ic-pencil"></i></h1>
+					<div id="study-view-more" class="view-content hide" onclick="viewStudy()">
+						<span class="view-button"><i class="fa fa-caret-down"></i> VIEW MORE</span>
+					</div>
+				</div>
+
+				<div style="margin-top: 1rem" id="study-full" class="column-info-study s1-2-container hide">
+					<h1 class="s1-title">Học vấn</h1>
+					<h1 class="s1-icon"><i class="ic-pencil"></i></h1>
+					<div class="s1-1-content">
+						<ul class="ul-people-info">
+							<li>
+								<div class="content-data">
+									<div ><b>FUNIX</b></div>
+									<div class="small">07/2023-07/2024</div>
+									<div>- Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack. <br>- GPA: 8/10</div>
+								</div>
+							</li>
+						</ul>
+						<div id="study-view-less" class="view-less-content" onclick="closeStudy()">
+							<span class="view-button"><i class="fa fa-caret-up"></i> VIEW LESS</span>
+						</div>
+					</div>
+				</div>
+
+				<div style="margin-top: 1rem" id="operation-less" class="column-info-operation-less s1-3-container">
+					<h1 class="s1-title">Hoạt động</h1>
+					<h1 class="s1-icon"><i class="ic-toolbox"></i></h1>
+					<div id="operation-view-more" class="view-content hide" onclick="viewOperation()">
+						<span class="view-button"><i class="fa fa-caret-down"></i> VIEW MORE</span>
+					</div>
+				</div>
+
+				<div style="margin-top: 1rem" id="operation-full" class="column-info-operation s1-3-container hide">
+					<h1 class="s1-title">Hoạt động</h1>
+					<h1 class="s1-icon"><i class="ic-toolbox"></i></h1>
+					<div class="s1-1-content">
+						<ul class="ul-people-info">
+							<li>
+								<div class="content-data">
+									<div ><b>Câu lạc bộ tiếng Anh</b></div>
+									<div class="small">08/2017 - 10/2028</span></div>
+									<div>- Thành viên</div>
+								</div>
+							</li>
+						</ul>
+						<div id="operation-view-less" class="view-less-content" onclick="closeOperation()">
+							<span class="view-button"><i class="fa fa-caret-up"></i> VIEW LESS</span>
+						</div>
+					</div>
+				</div>
+				
+				<div style="margin-top: 1rem" id="hobby-less" class="column-info-s2-less s2-1-container">
+					<h1 class="s1-title">Sở thích</h1>
+					<h1 class="s1-icon"><i class="ic-telescope"></i></h1>
+					<div id="hobby-view-more" class="view-content" onclick="viewHobby()">
+						<span class="view-button"><i class="fa fa-caret-down"></i> VIEW MORE</span>
+					</div>
+				</div>
+				<div style="margin-top: 1rem" id="hobby-full" class="column-info-s2 s2-1-container hide">
+					<h1 class="s1-title">Sở thích</h1>
+					<h1 class="s1-icon"><i class="ic-telescope"></i></h1>
+					<div class="s1-1-content s2-1-content-container">
+						<div class="s2-1-grid-icon-1">
+							<span class="icon-cirle"><i class="ic-megaphone"></i></span>
+							<span><br><br>Âm nhạc</span>
+						</div>
+						<div class="s2-1-grid-icon-2">
+							<span class="icon-cirle"><i class="ic-strategy"></i></span>
+							<span><br><br>Du lịch</span>
+						</div>
+						<div class="s2-1-grid-icon-3">
+							<span class="icon-cirle"><i class="ic-hotairballoon"></i></span>
+							<span><br><br>Chơi game</span>
+						</div>
+						<div class="s2-1-grid-icon-4">
+							<span class="icon-cirle"><i class="ic-basket"></i></span>
+							<span><br><br>Nấu ăn</span>
+						</div>
+						<div id="hobby-view-less" class="view-less-content hobby-view-less" onclick="closeHobby()">
+							<span class="view-button"><i class="fa fa-caret-up"></i> VIEW LESS</span>
+						</div>
+					</div>
+				</div>
+
+				<div style="margin-top: 1rem" id="language-less" class="column-info-s2-less s2-2-container">
+					<h1 class="s1-title">Ngôn ngữ</h1>
+					<h1 class="s1-icon"><i class="ic-mic"></i></h1>
+					<div id="language-view-more" class="view-content" onclick="viewLanguage()">
+						<span class="view-button"><i class="fa fa-caret-down"></i> VIEW MORE</span>
+					</div>
+				</div>
+
+				<div style="margin-top: 1rem" id="language-full" class="column-info-s2 s2-2-container hide">
+					<h1 class="s1-title">Ngôn ngữ</h1>
+					<h1 class="s1-icon"><i class="ic-mic"></i></h1>
+					<div class="language-container">
+						<div class="language-1">
+							<div class="language-content">
+								<div class="language-item-1">
+									Tiếng Anh - IELTS 7.0
+								</div>
+								<div class="language-item-2">
+									<progress style="font-size: 5px" value="100" max="100"> </progress>
+									<progress style="font-size: 5px" value="100" max="100"> </progress>
+									<progress style="font-size: 5px" value="0" max="100"> </progress>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="language-2">
+							<div class="language-item-1">
+								Tiếng Nhật - JLPT N4
+							</div>
+							<div class="language-item-2">
+								<progress style="font-size: 5px" value="100" max="100"> </progress>
+								<progress style="font-size: 5px" value="0" max="100"> </progress>
+								<progress style="font-size: 5px" value="0" max="100"> </progress>
+							</div>
+						</div>
+						<br>
+						<div id="language-view-less" class="view-less-content" onclick="closeLanguage()">
+							<span class="view-button"><i class="fa fa-caret-up"></i> VIEW LESS</span>
+						</div>
+					</div>
+				</div>
+
+				<div style="margin-top: 1rem" id="skill-less" class="column-info-s2-less s2-3-container">
+					<h1 class="s1-title">Kỹ năng</h1>
+					<h1 class="s1-icon"><i class="ic-tools-2"></i></h1>
+					<div id="skill-view-more" class="view-content" onclick="viewSkill()">
+						<span class="view-button"><i class="fa fa-caret-down"></i> VIEW MORE</span>
+					</div>
+				</div>
+				
+				<div style="margin-top: 1rem" id="skill-full" class="column-info-s2 s2-3-container hide">
+					<h1 class="s1-title">Kỹ năng</h1>
+					<h1 class="s1-icon"><i class="ic-tools-2"></i></h1>
+					<div class="skill-container">
+						<div class="skill-1">
+							<div class="skill-content">
+								<div class="skill-item-1">
+									Java: Intermediate
+								</div>
+								<div class="skill-item-2">
+									<progress style="font-size: 5px" value="100" max="100"> </progress>
+									<progress style="font-size: 5px" value="100" max="100"> </progress>
+									<progress style="font-size: 5px" value="0" max="100"> </progress>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="skill-2">
+							<div class="skill-item-1">
+								JavaScript: Fundamental
+							</div>
+							<div class="skill-item-2">
+								<progress style="font-size: 5px" value="100" max="100"> </progress>
+								<progress style="font-size: 5px" value="0" max="100"> </progress>
+								<progress style="font-size: 5px" value="0" max="100"> </progress>
+							</div>
+						</div>
+						<br>
+						<div class="skill-3">
+							<div class="skill-item-1">
+								HTML/CSS: Fundamental
+							</div>
+							<div class="skill-item-2">
+								<progress style="font-size: 5px" value="100" max="100"> </progress>
+								<progress style="font-size: 5px" value="0" max="100"> </progress>
+								<progress style="font-size: 5px" value="0" max="100"> </progress>
+							</div>
+						</div>
+						<br>
+						<div class="skill-4">
+							<div class="skill-content">
+								<div class="skill-item-1">
+									Python: Intermediate
+								</div>
+								<div class="skill-item-2">
+									<progress style="font-size: 5px" value="100" max="100"> </progress>
+									<progress style="font-size: 5px" value="100" max="100"> </progress>
+									<progress style="font-size: 5px" value="0" max="100"> </progress>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div id="skill-view-less" class="view-less-content" onclick="closeSkill()">
+							<span class="view-button"><i class="fa fa-caret-up"></i> VIEW LESS</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="certificate" class="bg-grey">
+		<div class="container custom-container">
+			<h1 class="section-title certificate-title">
+				Chứng chỉ - Giải thưởng
+			</h1>
+			<div class="certificate-container">
+				<div class="certificate-contents">
+					<div class="certificate-detail">
+						<img src="images/Cert_WEB.png" alt="cert_web-img" width="100%"/>
+					</div>
+					<div class="certificate-detail">
+						<span><b>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</b></span>
+						<br>
+						<span>- Chứng chỉ thuộc chương trình CCDN</span>
+						<br>
+						<span>- GPA: 8.6</span>
+					</div>
+				</div>
+				<div class="certificate-contents">
+					<div class="certificate-detail certificate-detail-border">
+						<img src="images/Cert_PRF.png" alt="cert_web-img" width="100%"/>
+					</div>
+					<div class="certificate-detail">
+						<span><b>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</b></span>
+						<br>
+						<span>- Chứng chỉ thuộc chương trình CCDN</span>
+						<br>
+						<span>- GPA: 8.9</span>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="certificate-border">
+			</div>
+			<br>
+			<div class="certificate-container">
+				<div class="certificate-contents certificate-contents-none">
+					<div class="certificate-detail">
+						<img src="images/Cert_DBI.png" alt="cert_web-img" width="100%"/>
+					</div>
+					<div class="certificate-detail">
+						<span><b>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</b></span>
+						<br>
+						<span>- Chứng chỉ thuộc chương trình CCDN</span>
+						<br>
+						<span>- GPA: 8.0</span>
+					</div>
+				</div>
+				<div class="certificate-contents certificate-contents-none">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="project">
+		<div class="container custom-container">
+			<h1 class="section-title">
+				Dự án
+			</h1>
+			<div class="project-container">
+				<div id="project-1" class="project-info">
+					<div>
+						<img src="images/project_1.png" alt="project_1" width="100%"/>
+					</div>
+					<div class="project-title">
+						<b>CV CÁ NHÂN</b>
+					</div>
+					<div class="project-dev-info">
+						<div>
+							<span class="year-item">2023</span>
+							<span class="next-item"><i class="icon-user-1"></i> FUNIX</span>
+							<span class="last-item"><i class="icon-lamp"></i> Developer</span>
+						</div>
+					</div>
+					<div>
+						<table id="project-1-detail" class="project-table">
+						  <tr>
+							<td>Mô tả</td>
+							<td>Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
+						  </tr>
+						  <tr>
+							<td>Nhiệm vụ</td>
+							<td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+						  </tr>
+						  <tr>
+							<td>Công nghệ</td>
+							<td>- HTML, CSS</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+				<div id="project-2" class="project-info">
+					<div>
+						<img src="images/project_2.png" alt="project_2" width="100%"/>
+					</div>
+					<div class="project-title">
+						<b>TRANG WEB QUẢN LÝ THÚ CƯNG</b>
+					</div>
+					<div class="project-dev-info">
+						<div>
+							<span class="year-item">2023</span>
+							<span class="next-item"><i class="icon-user-1"></i> FUNIX</span>
+							<span class="last-item"><i class="icon-lamp"></i> Developer</span>
+						</div>
+					</div>
+					<div>
+						<table id="project-2-detail" class="project-table">
+						  <tr>
+							<td>Mô tả</td>
+							<td>Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân nặng, giống, 
+								tình trạng tiêm chủng,... Bao gồm các chức năng thêm/sửa/xóa.</td>
+						  </tr>
+						  <tr>
+							<td>Nhiệm vụ</td>
+							<td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+						  </tr>
+						  <tr>
+							<td>Công nghệ</td>
+							<td>- HTML, CSS, JavaScript</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+				<div id="project-3" class="project-table project-info">
+					<div>
+						<img src="images/project_3.png" alt="project_3" width="100%"/>
+					</div>
+					<div class="project-title">
+						<b>TRANG WEB XEM TIN TỨC</b>
+					</div>
+					<div class="project-dev-info">
+						<div>
+							<span class="year-item">2023</span>
+							<span class="next-item"><i class="icon-user-1"></i> FUNIX</span>
+							<span class="last-item"><i class="icon-lamp"></i> Developer</span>
+						</div>
+					</div>
+					<div>
+						<table id="project-3-detail" class="project-table">
+						  <tr>
+							<td>Mô tả</td>
+							<td>Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm
+								kiếm các tin tức dựa theo các từ khóa.</td>
+						  </tr>
+						  <tr>
+							<td>Nhiệm vụ</td>
+							<td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+						  </tr>
+						  <tr>
+							<td>Công nghệ</td>
+							<td>- HTML, CSS, JavaScript</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer" class="bg-grey">
+		<div class="container">
+			<div class="Github footer-content">
+				<a class="footer-a" href="https://www.facebook.com/tung.phanthanh.334"><i style="color:#5aa7dd" class="icon-facebook-circled"></i>Facebook</a>
+				<a class="footer-a footer-padding" href="https://www.linkedin.com/in/tung-phan-thanh-694862122/"><i style="color:#5aa7dd" class="icon-linkedin-circled"></i>Linkedin</a>
+				<a class="footer-a footer-padding" href="#"><i style="color:#5aa7dd" class="icon-github-circled"></i>Github</a>
+			</div>
+		</div>
+	</section>
+</body>
+<script>
+
+	// function to handle display information
+	function submit() {
+		let email = document.getElementById("email").value;
+		const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if (regex.test(email)) {
+			let info = document.getElementById("email-required");
+			info.style.removeProperty("display");
+			let emailInput = document.getElementById("input-email");
+			emailInput.style.display = "none";
+		} else {
+			alert("Email không hợp lệ, vui lòng nhập đúng email!");
+		}
+	}
+
+	// view exp
+	function viewExp() {
+		let expLess = document.getElementById("exp-less");
+		let expFull = document.getElementById("exp-full");
+		expLess.style.display = "none";
+		expFull.style.display = "grid";
+	}
+
+	// close view of exep
+	function closeExp() {
+		let expLess = document.getElementById("exp-less");
+		let expFull = document.getElementById("exp-full");
+		expLess.style.display = "grid";
+		expFull.style.display = "none";
+	}
+
+	// view hobby
+	function viewHobby() {
+		let hobbyLess = document.getElementById("hobby-less");
+		let hobbyFull = document.getElementById("hobby-full");
+		hobbyLess.style.display = "none";
+		hobbyFull.style.display = "grid";
+	}
+
+	// close view of hobby
+	function closeHobby() {
+		let hobbyLess = document.getElementById("hobby-less");
+		let hobbyFull = document.getElementById("hobby-full");
+		hobbyLess.style.display = "grid";
+		hobbyFull.style.display = "none";
+	}
+
+	// view language
+	function viewLanguage() {
+		let languageLess = document.getElementById("language-less");
+		let languageFull = document.getElementById("language-full");
+		languageLess.style.display = "none";
+		languageFull.style.display = "grid";
+	}
+
+	// close view of language
+	function closeLanguage() {
+		let languageLess = document.getElementById("language-less");
+		let languageFull = document.getElementById("language-full");
+		languageFull.style.display = "none";
+		languageLess.style.display = "grid";
+	}
+
+	// view operation
+	function viewOperation() {
+		let operationLess = document.getElementById("operation-less");
+		let operationFull = document.getElementById("operation-full");
+		operationLess.style.display = "none";
+		operationFull.style.display = "grid";
+	}
+
+	// close view of openration
+	function closeOperation() {
+		let operationLess = document.getElementById("operation-less");
+		let operationFull = document.getElementById("operation-full");
+		operationFull.style.display = "none";
+		operationLess.style.display = "grid";
+	}
+
+	// view skill
+	function viewSkill() {
+		let skillLess = document.getElementById("skill-less");
+		let skillFull = document.getElementById("skill-full");
+		skillLess.style.display = "none";
+		skillFull.style.display = "grid";
+	}
+
+	// close view of skill
+	function closeSkill() {
+		let skillLess = document.getElementById("skill-less");
+		let skillFull = document.getElementById("skill-full");
+		skillFull.style.display = "none";
+		skillLess.style.display = "grid";
+	}
+
+	// view study
+	function viewStudy() {
+		let studyLess = document.getElementById("study-less");
+		let studyFull = document.getElementById("study-full");
+		studyLess.style.display = "none";
+		studyFull.style.display = "grid";
+	}
+
+	// close view of study
+	function closeStudy() {
+		let studyLess = document.getElementById("study-less");
+		let studyFull = document.getElementById("study-full");
+		studyFull.style.display = "none";
+		studyLess.style.display = "grid";
+	}
+</script>
+</html>
